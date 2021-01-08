@@ -1,0 +1,463 @@
+$background-color:#08366C;  //默认的组件背景色
+$background-dark:#09244C;
+$border-color:#3A67A5; //默认的组件边框色
+$disable-background-color:#06284e;
+$extrude-color:#00FF95;
+
+$--font-size-base: 13px;
+
+$--color-primary: #2996CD;
+$--color-success: #1F9999;
+$--border-radius-base: 1px;
+$--color-default:#1F5299;
+$--color-info:#1F5299;
+$--color-warning: #E6A23C !default;
+$--color-danger: #F56C6C !default;
+
+$--color-white:#ffffff;
+$--color-black:#000000;
+
+/// color|1|Font Color|2
+$--color-text-primary: #CDD4DE;
+/// color|1|Font Color|2
+$--color-text-regular:#FFFFFF;
+/// color|1|Font Color|2
+$--color-text-secondary: #99A9BF;
+/// color|1|Font Color|2
+$--color-text-placeholder: #99A9BF;
+
+$--background-color-base:$background-color;
+$--border-color-hover:$border-color;
+
+$--disabled-border-base:$border-color;
+
+$--border-color-light:$border-color;
+$--border-color-lighter:$border-color;
+
+//Button
+
+$--input-background-color:$background-color;
+$--border-color-base:$border-color;
+$--button-default-background-color:$--color-info;
+/// color||Color|0
+$--button-default-border-color:$--color-default;
+
+//Input
+$--input-disabled-fill: $disable-background-color;
+$--input-disabled-border: $border-color;
+
+
+//Select
+$--select-dropdown-background:$background-dark;
+$--select-dropdown-border:solid 1px $border-color;
+$--popover-background-color:$background-dark;
+$--popover-border-color:$border-color;
+$--select-group-color:$--color-text-placeholder;
+$--select-multiple-input-color:$--color-text-placeholder;
+
+//Cascaser
+$--cascader-menu-fill:$background-dark;
+$--cascader-menu-border: solid 1px $border-color;
+
+//Switch
+$--switch-on-color: $--color-success;
+$--switch-off-color: $--color-text-secondary!default;
+
+//TimePicker
+$--datepicker-inner-border-color:$border-color;
+
+//DatePicker
+$--datepicker-inrange-background-color:$background-color;
+$--datepicker-inrange-hover-background-color:$background-color;
+
+//Radio
+//$--radio-font-color:$extrude-color;
+$--radio-checked-font-color:$extrude-color;
+$--radio-checked-input-border-color:#00CCCC;
+$--radio-checked-icon-color:$background-color;
+$--radio-input-background-color:$background-color;
+
+$--radio-button-checked-background-color: $--color-success;
+$--radio-button-checked-font-color: $--color-white;
+$--radio-button-checked-border-color: $--color-success;
+$--radio-button-disabled-checked-fill: $--color-success;
+$--button-disabled-background-color:mix($background-color,#000000,90%);
+
+//CheckBox
+$--checkbox-background-color:$background-dark;
+$--checkbox-button-checked-background-color: $--color-success;
+$--checkbox-button-checked-border-color: $--color-success;
+
+//Table
+$--table-border-color:  rgba(12, 60, 128, 1);
+$--table-border: 1px solid $--table-border-color;
+$--table-header-background-color: #0A366B;
+$--table-current-row-background-color: $background-color;
+
+//Pagination
+$--pagination-background-color: transparent;
+$--pagination-button-disabled-background-color: transparent;
+$--pagination-button-width: 28px;
+
+//Dropdown
+$--dropdown-menuItem-hover-fill: $background-color;
+
+//Tooltip
+$--tooltip-fill: $background-color;
+$--tooltip-border-color:$border-color;
+
+//Card
+$--card-border-color: $border-color;
+$--card-border-radius: 1px;
+
+//Colapse
+$--collapse-border-color:$border-color;
+$--collapse-header-background-color: $background-color;
+$--collapse-content-background-color:$background-color;
+
+//Calender
+$--calendar-selected-background-color: $background-color;
+
+
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+$normal-blue : #4dff65;
+$text-normal : rgb(173, 173, 173);
+$text-dark: rgb(255, 255, 255);
+$line-color : #3A67A5;
+$normal-red : #ff2b47;
+$light-red : $background-color;
+
+@import "~element-ui/packages/theme-chalk/src/index";
+@import "../var.scss";
+@import "../public.scss";
+
+.el-button--default,.el-button--default.is-plain{
+  &:hover,
+  &:focus {
+    color: $--color-white;
+    border-color: $--color-info;
+    background-color: mix($--color-info,$--color-white,90%);
+  }
+  &.is-disabled{
+    background: mix($--color-info,$--color-white,70%);
+    border:solid 1px mix($--color-info,$--color-white,70%);
+    color:$--color-white;
+    &:hover,
+    &:focus {
+      color: $--color-white;
+      border:solid 1px mix($--color-info,$--color-white,70%);
+      background-color:  mix($--color-info,$--color-white,70%);
+    }
+  }
+}
+
+.el-input-group__prepend,.el-input-group__append{
+  color:$--color-text-placeholder;
+}
+.el-input .el-input__count .el-input__count-inner{
+  background: transparent;
+  color:$--color-text-placeholder;
+}
+
+.el-input__inner{
+  font-size:13px;
+}
+
+.el-select-dropdown__item.is-disabled:hover {
+  background-color: $disable-background-color;
+}
+
+.el-select-group__wrap:not(:last-of-type)::after{
+  background: $border-color;
+}
+
+input{
+  background-color: $background-color;
+}
+
+.el-picker-panel{
+  background: $background-dark;
+}
+
+.el-time-panel{
+  background: $background-dark;
+}
+
+.el-time-spinner__wrapper.is-arrow .el-time-spinner__item:hover:not(.disabled):not(.active){
+  background: $background-color;
+}
+
+.el-time-spinner.has-seconds .el-time-spinner__wrapper{
+  width:32.3%;
+}
+
+.el-picker-panel *[slot=sidebar], .el-picker-panel__sidebar{
+  background: $background-dark;
+}
+
+.el-picker-panel__footer{
+  background: $background-dark;
+}
+
+.el-radio__inner::after{
+  background: #1F9999;
+}
+
+.el-upload-list--picture .el-upload-list__item{
+  background: $background-dark;
+  border:solid 1px $border-color;
+}
+
+.el-upload-dragger{
+  background: $background-dark;
+}
+
+.el-color-picker__panel{
+  background-color: $background-dark;
+}
+
+.el-color-picker__trigger{
+  border:solid 1px $border-color;
+}
+
+.el-transfer-panel{
+  background: $background-dark;
+}
+
+.el-form-item__label{
+  color:$--color-text-secondary;
+}
+
+.el-table{
+  background: $background-dark;
+  font-size:13px;
+  border:solid 1px rgba(12, 60, 128, 1);
+}
+.el-table tr{
+  background: transparent;
+}
+.el-table th{
+  background: $--table-header-background-color;
+  color:#B2C3D9;
+  font-weight: normal;
+}
+.el-table__fixed-right-patch{
+  background: $--table-header-background-color;
+}
+.el-table td{
+  color:#CDD4DE;
+  background: $background-dark;
+}
+
+.el-table--striped .el-table__body tr.el-table__row--striped td{
+  background: #0A3568;
+}
+.el-table::before{
+  display: none;
+}
+.el-table--border th, .el-table--border td{
+  border-bottom:solid 1px rgba(12, 60, 128, 1);
+}
+
+.el-table--group tr td{
+  //border-right:none;
+}
+.el-table-filter{
+  background: $background-dark;
+}
+.el-table__column-filter-trigger i{
+  color:$--color-text-regular;
+}
+
+.el-table thead.is-group tr:nth-child(0) th{
+  background: #114F87;
+}
+.el-table thead.is-group tr:nth-child(1) th{
+  background: #0D457B;
+}
+.el-table thead.is-group tr:nth-child(2) th{
+  background: #08356A;
+}
+
+.el-dialog__header{
+  text-align:center;
+}
+
+.el-progress-bar__outer{
+  background:$background-color;
+}
+.el-tree{
+  background: $background-dark;
+}
+
+.el-pagination button{
+  border:solid 1px $border-color;
+  padding:0;
+}
+.el-pagination .btn-prev{
+  padding-right:0;
+  margin-right:2px;
+}
+.el-pagination .btn-next{
+  padding-left:0;
+  margin-left:2px;
+}
+.el-pager li{
+  border:solid 1px $border-color;
+  margin:0 2px;
+}
+.el-pager li.active + li{
+  border-left:solid 1px $border-color;
+}
+.el-pager li.active{
+  background: $border-color;
+  border:solid 1px $border-color;
+  color:$--color-white
+}
+.el-loading-mask{
+  background-color: rgba(0,0, 0, 0.3);
+}
+
+.el-message-box{
+  background-color: $background-dark;
+}
+
+.el-notification{
+  background-color: $background-dark;
+}
+
+.el-tabs__item.is-active, .el-tabs__item:hover{
+  color: $--color-success;
+}
+.el-tabs__active-bar{
+  background: $--color-success;
+}
+.el-tabs--card > .el-tabs__header .el-tabs__item.is-active{
+  color:$--color-white;
+  background: $--color-success;
+  border-bottom-color:$--color-success;
+}
+.el-tabs--border-card{
+  background: $background-dark;
+}
+.el-tabs--border-card > .el-tabs__header .el-tabs__item.is-active{
+  background: $--color-success;
+  color:$--color-white;
+}
+.el-tabs--border-card > .el-tabs__header .el-tabs__item:not(.is-disabled):hover{
+  color:$--color-white;
+}
+.el-breadcrumb__inner.is-link:hover, .el-breadcrumb__inner a:hover{
+  color:$--color-success;
+}
+
+.el-dropdown-menu{
+  background: $background-dark;
+}
+.el-dropdown-menu__item:focus, .el-dropdown-menu__item:not(.is-disabled):hover{
+  background: $background-color;
+}
+.el-dropdown-menu__item--divided:before{
+  background: $background-dark;
+}
+
+.el-step__icon{
+  background: $background-dark;
+}
+
+.el-dialog{
+  background-color: $background-color;
+}
+
+.el-dialog__header{
+  border-bottom:none;
+}
+
+.el-tooltip__popper.is-dark{
+  border:solid 1px $border-color;
+}
+
+.el-tooltip__popper.is-light{
+  color:$--color-white;
+  background: $background-color;
+  border:solid 1px $border-color;
+  &[x-placement^="top"] .popper__arrow {
+    border-top-color: $border-color;
+    &::after {
+      border-top-color: $background-color;
+    }
+  }
+  &[x-placement^="bottom"] .popper__arrow {
+    border-bottom-color: $border-color;
+    &::after {
+      border-bottom-color: $background-color;
+    }
+  }
+  &[x-placement^="left"] .popper__arrow {
+    border-left-color: $border-color;
+    &::after {
+      border-left-color: $background-color;
+    }
+  }
+  &[x-placement^="right"] .popper__arrow {
+    border-right-color: $border-color;
+    &::after {
+      border-right-color: $background-color;
+    }
+  }
+}
+
+.el-card{
+  background:$background-color;
+}
+
+// .el-calendar{
+//     background: $background-dark;
+// }
+
+// .el-calendar-table .el-calendar-day{
+//     color:$--color-text-primary;
+// }
+
+.is-active .el-submenu__title{
+  background: $--color-success;
+}
+.el-menu{
+    background: transparent;
+}
+
+.el-menu-item, .el-submenu__title {
+  height: 56px;
+  line-height: 56px;
+  position: relative;
+  color:$--color-text-primary;
+  -webkit-box-sizing: border-box;
+  white-space: nowrap;
+  list-style: none;
+  &:hover{
+    background: #052C64;
+  }
+}
+
+.el-menu-item:focus, .el-menu-item:hover{
+  background: #052C64;
+}
+
+.el-radio-button:focus:not(.is-focus):not(:active):not(.is-disabled){
+  box-shadow:none;
+}
+
+.el-radio-button__inner{
+  color:#CDD4DE;
+  background: $background-color;
+  &:hover{
+    color:$--color-success;
+  }
+}
+
+.el-radio-button__orig-radio:checked + .el-radio-button__inner{
+  &:hover{
+    color:$--color-white;
+  }
+}

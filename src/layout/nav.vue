@@ -1,5 +1,5 @@
 <template>
-    <div class="nav-content">
+    <div class="nav-content border-r">
         <el-menu>
             <template v-for="(item,index) in navData">
                 <el-menu-item @click="goto(item.path)" :index="'nav'+index" :key="'nav'+index" v-if="!item.children || item.children.length == 0">
@@ -35,6 +35,5 @@ export default {
     .nav-content{
         width:100%;
         height:100%;
-        border-right: solid 1px $line-color;
     }
 </style>

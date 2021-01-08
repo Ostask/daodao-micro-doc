@@ -2,13 +2,29 @@ code{
     font-family: '微软雅黑';
     line-height: 26px;
 }
+.border-b{
+    border-bottom:1px solid $line-color;
+}
+.border-r{
+    border-right: solid 1px $line-color;
+}
+.color-dark{
+    color:$text-dark;
+}
+a{
+    color: $normal-blue;
+}
+.main-contenter{
+    background: $background-color;
+    color:$text-normal;
+}
 .article-page{
     width:900px;
     margin:0 auto;
     padding-bottom:30px;
     .mark{
-        color: #c7254e;
-        background-color: #f9f2f4;
+        color:$normal-red;
+        background-color:$light-red;
         border-radius: 2px;
         padding:2px;
         margin:2px;

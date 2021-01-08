@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "vue-cli-service serve --mode dev",
     "build": "vue-cli-service build --mode prod",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "buildtheme": "gulp build"
   },
   "dependencies": {
     "axios": "^0.21.1",
@@ -22,6 +23,11 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-style-aliases": "^1.1.11",
     "node-sass": "^5.0.0",
     "sass": "^1.30.0",
     "sass-loader": "^10.1.0",

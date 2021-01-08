@@ -65,7 +65,6 @@ html,body{
 </style>
 <style lang="scss" scoped>
 .main-contenter {
-  color:$text-normal;
   width:100%;
   height:100%;
   line-height: 32px;

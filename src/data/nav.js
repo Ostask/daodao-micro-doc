@@ -4,7 +4,7 @@ export default [
         path: "/",
     },
     {
-        title: "创建微前端应用",
+        title: "使用教程",
         path: "/daodaochild",
         children:[
             {

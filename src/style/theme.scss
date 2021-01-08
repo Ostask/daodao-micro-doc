@@ -1,0 +1,9 @@
+/**
+    样式切换
+*/
+.dark-theme{
+    @import '@/style/theme/dark';
+}
+.light-theme{
+    @import '@/style/theme/light';
+}

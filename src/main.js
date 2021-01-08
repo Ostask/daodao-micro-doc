@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
-import '@/style/public.scss';
+import '@/style/theme.scss';
 import '@/style/el.scss';
 import App from './App.vue'
 import router from "./router"

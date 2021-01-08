@@ -1,5 +1,6 @@
 const TokenKey = process.env.VUE_APP_NODE_ENV+'Admin-Token'
 const UserKey = process.env.VUE_APP_NODE_ENV+'userInfo'
+const ThemeKey = process.env.VUE_APP_NODE_ENV+'theme'
 
 export function getToken() {
   return window.localStorage.getItem(TokenKey)
@@ -36,3 +37,12 @@ export function setPassword(username,password){
 export function removePassword() {
     window.localStorage.removeItem('loginInfo')
 }
+
+export function getTheme(){
+  return window.localStorage.getItem(ThemeKey)
+}
+
+export function setTheme(theme){
+    window.localStorage.setItem(ThemeKey, theme)
+}
+

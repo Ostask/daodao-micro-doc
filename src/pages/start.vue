@@ -193,6 +193,13 @@
         —— 鲁迅
       </blockquote>
     </div>
+    <br>
+        <br>
+        <br>
+        <p>参考文档：</p>
+        <p>
+            <a target="_blank" href="https://zhuanlan.zhihu.com/p/95085796">微前端的核心价值</a>
+        </p>
   </div>
 </template>
 
