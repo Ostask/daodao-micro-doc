@@ -1,0 +1,28 @@
+code{
+    font-family: '微软雅黑';
+    line-height: 26px;
+}
+.article-page{
+    width:900px;
+    margin:0 auto;
+    padding-bottom:30px;
+    .mark{
+        color: #c7254e;
+        background-color: #f9f2f4;
+        border-radius: 2px;
+        padding:2px;
+        margin:2px;
+    }
+    .title{
+        font-size:26px;
+        text-align: center;
+        font-weight: bold;
+        color:$normal-blue;
+    }
+    h3{
+        color:$text-dark;
+    }
+    p{
+        text-indent:2em;
+    }
+}
