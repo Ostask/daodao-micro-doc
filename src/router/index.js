@@ -19,6 +19,15 @@ const routes = [
     }
 ]
 
-export default new VueRouter({
+const router = new VueRouter({
     routes
 })
+
+router.afterEach(() => {
+    const el = document.getElementById('frame-wrapper')
+    if(el){
+        el.scrollTop = 0
+    }
+})
+
+export default router
