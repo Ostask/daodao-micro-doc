@@ -1,3 +1,8 @@
+import vMessage from '@/components/Message/index.js' 
+import {directiveInstall} from "@/directives/index.js"
+import nothing from '@/components/nothing.vue'
+import {util} from '@/utils/common.js'
+
 //此时我们还没有微应用，所以app为空
 const apps = [
     /**
@@ -17,6 +22,16 @@ const apps = [
     entry: "//192.168.2.122:10300",
     container: "#frame",
     activeRule: "#/daodaodemo",
+    props:{
+      plugin:{
+        directiveInstall,//公用指令注册插件
+        vMessage,//将这个插件传给子应用
+      },
+      components:{ //传递公用组件
+        nothing
+      }, 
+      utils:util //传递公用方法
+    }
   },
 ]
 export default apps

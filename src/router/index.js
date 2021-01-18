@@ -16,6 +16,11 @@ const routes = [
         meta:{
             fullscreen:true
         }
+    },
+    {
+        path:"/public",
+        name:"LoginPublic",
+        component:() => import("../pages/public.vue")
     }
 ]
 

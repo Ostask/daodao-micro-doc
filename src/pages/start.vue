@@ -203,6 +203,16 @@
   </div>
 </template>
 
+<script>
+export default {
+  data(){
+    return{
+
+    }
+  }
+}
+</script>
+
 <style lang="scss">
 .start {
   width: 800px;

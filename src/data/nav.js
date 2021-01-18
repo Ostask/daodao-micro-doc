@@ -4,6 +4,10 @@ export default [
         path: "/",
     },
     {
+        title: "主应用公共组件",
+        path: "/public",
+    },
+    {
         title: "使用教程",
         path: "/daodaochild",
         children:[
@@ -40,6 +44,10 @@ export default [
             {
                 title:'echarts示例',
                 path:"/daodaodemo/charts"
+            },
+            {
+                title:'主应用共享公共组件',
+                path:"/daodaodemo/public"
             }
         ]
     },
@@ -62,6 +70,10 @@ export default [
             {
                 title:'应用间通信',
                 path:"/daodaochild/actions"
+            },
+            {
+                title:'共享插件、组件、指令、方法',
+                path:"/daodaochild/public"
             }
         ]
     }
